@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Notes</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>Aurora Notes</h1>
+      <p>Organize suas ideias de forma simples.</p>
+    </header>
+
+    <section class="note-form">
+      <h2>Nova nota</h2>
+
+      <form id="note-form">
+        <label for="note-title">Título</label>
+        <input
+          id="note-title"
+          type="text"
+          placeholder="Ex.: Ideias para o projeto"
+          required
+        >
+
+        <label for="note-content">Conteúdo</label>
+        <textarea
+          id="note-content"
+          rows="4"
+          placeholder="Escreva sua nota aqui..."
+          required
+        ></textarea>
+
+        <button type="submit">Adicionar nota</button>
+      </form>
+    </section>
+
+    <section class="notes">
+      <h2>Suas notas</h2>
+      <ul id="notes-list"></ul>
+      <p id="empty-message">Nenhuma nota criada ainda.</p>
+    </section>
+  </main>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
